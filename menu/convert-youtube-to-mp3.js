@@ -1,4 +1,8 @@
-export const convertYouTubeToMp3 = async ({CloudCmd, DOM}) => {
+export default {
+     'Y - Youtube to mp3': convertYouTubeToMp3,
+}
+
+export async function convertYouTubeToMp3({CloudCmd, DOM}) {
       const {View} = CloudCmd;
       const {Dialog} = DOM;
 
@@ -34,7 +38,3 @@ export const convertYouTubeToMp3 = async ({CloudCmd, DOM}) => {
           autoSize: true,
       });
   };
-
-export default {
-     'Y - Youtube to mp3': convertYouTubeToMp3,
-}
