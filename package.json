@@ -1,0 +1,54 @@
+{
+  "name": "user-menu",
+  "private": true,
+  "version": "1.1.0",
+  "type": "module",
+  "commitType": "colon",
+  "description": "User Menu for Cloud Commander",
+  "scripts": {
+    "test": "madrun test",
+    "coverage": "madrun coverage",
+    "lint": "madrun lint",
+    "fix:lint": "madrun fix:lint",
+    "report": "madrun report",
+    "watcher": "madrun watcher",
+    "watch:test": "madrun watch:test",
+    "watch:lint": "madrun watch:lint",
+    "watch:tape": "madrun watch:tape",
+    "watch:coverage:base": "madrun watch:coverage:base",
+    "watch:coverage:tape": "madrun watch:coverage:tape",
+    "watch:coverage": "madrun watch:coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/coderaiser/montag.git"
+  },
+  "keywords": [
+    "tag",
+    "literal",
+    "join",
+    "template",
+    "array"
+  ],
+  "author": "coderaiser <mnemonic.enemy@gmail.com> (http://coderaiser.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coderaiser/montag/issues"
+  },
+  "homepage": "https://github.com/coderaiser/montag",
+  "devDependencies": {
+    "c8": "^7.8.0",
+    "eslint": "^8.11.0",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-putout": "^16.3.0",
+    "madrun": "^9.0.0",
+    "mock-require": "^3.0.3",
+    "nodemon": "^2.0.2",
+    "putout": "^28.5.0",
+    "supertape": "^8.2.0"
+  },
+  "dependencies": {},
+  "publishConfig": {
+    "access": "public"
+  }
+}

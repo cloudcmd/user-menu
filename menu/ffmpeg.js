@@ -5,7 +5,7 @@ export default {
     'M - Convert mp4 to mp3': convertMp4ToMp3,
 };
 
-export async function convertFlacToMp3({DOM, CloudCmd}) => {
+export async function convertFlacToMp3({DOM, CloudCmd}) {
       const command = 'for f in *.flac; do ffmpeg -vsync 2 -i "$f" -b:a 320k "${f%flac}mp3"; done';
       await convert(command, {
           DOM,
@@ -13,7 +13,7 @@ export async function convertFlacToMp3({DOM, CloudCmd}) => {
       });
 }
 
-export async function convertMp4ToMp3({DOM, CloudCmd}) => {
+export async function convertMp4ToMp3({DOM, CloudCmd}) {
     const command = 'for f in *.mp4; do ffmpeg -i "$f" "${f%mp4}mp3"; done';
     await convert(command, {
         DOM,
