@@ -23,7 +23,7 @@ export async function convertMp4ToMp3({DOM, CloudCmd}) {
 }
 
 export async function convertMovToMp3({DOM, CloudCmd}) {
-    const command = 'for f in *.MOV; do ffmpeg -i "$f" "${f%mp4}mp3"; done';
+    const command = 'for f in *.MOV; do ffmpeg -i "$f" "${f%MOV}mp3"; done';
     await convert(command, {
         DOM,
         CloudCmd,
