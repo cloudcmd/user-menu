@@ -1,3 +1,8 @@
+2023.01.22, v1.2.2
+
+fix:
+- ffmpeg: convertMovToMp3
+
 2023.01.22, v1.2.1
 
 feature:
