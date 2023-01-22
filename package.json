@@ -1,7 +1,7 @@
 {
   "name": "@cloudcmd/user-menu",
   "private": true,
-  "version": "1.2.2",
+  "version": "1.2.3",
   "type": "module",
   "commitType": "colon",
   "description": "User Menu for Cloud Commander",
